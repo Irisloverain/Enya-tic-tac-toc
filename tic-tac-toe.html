@@ -123,9 +123,7 @@
         const showWinner = document.getElementById("showWinner");
         console.log(winner);
         //遍歷gamesize次，查詢有沒有勝利結果
-        let winIndex = [];
         for(let i = 0; i < allWinPattern.length; i++){
-
             const [a,b,c] = allWinPattern[i];
             //如果record上的索引值指向的位置中，內容不是null，而且都有相同的內容(o或x)，代表o或x勝出了
             if(record[a]  &&  record[a] === record[b] && record[b] && record[b] === record[c] && record[c]){
